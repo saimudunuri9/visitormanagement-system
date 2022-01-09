@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html> <body background="2.jpg">
+<head> 
+<frameset rows="20%,*"> 
+<h1>"VISITOR REGISTRATION WEBSITE" </h1>
+
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("h1").hide();
+  });
+  $("#show").click(function(){
+    $("h1").show();
+  });
+});
+</script>
+</head>
+<body bgcolor = yellow>
+
+<p></p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+</body>
+</body>
+<frameset cols="25%,*"> 
+<body>
+<head> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#panel").click(function(){
+    $("#flip").slideDown("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+<title>frame2</title> 
+</head> 
+<body bgcolor = "green"> 
+ 
+<div id = "panel">click me slide down </div>
+<div id= "flip">
+<a href="intro.html"  target="new">ABOUT HOTEL</a><br> <br> 
+<a href="opp.html" target="new">CONTACT US</a><br> <br> 
+<a href="out.html"  target="new">ADDRESS OF HOTEL</a><br> <br> 
+</div>
+</body> 
+</body> 
+
+<body bgcolor = yellow> 
+
+<h1 style="text-align: center;fontstyle:  
+normal;color:rebeccapurple"> <div style="color:red" > <h1>WELCOME TO HOMEPAGE OF VISTOR</h1> </div>
+<head>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+ let  y = document.forms["myForm"]["pass"].value;
+  if (x == "" ||y=="") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body bgcolor = aquamarine>
+
+<h2>JavaScript Validation</h2>
+
+<form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+ <DIV>  USER ID: <input type="text" name="fname" placeholder= name>
+<BR><BR>
+  PASSWORD :<input type = password name = "pass" placeholder= password> <BR> <BR>
+  <input type="submit" value="Submit">
+<input type = "reset" value = "clear all">
+</DIV>
+</form>
+</body>
+</body>
+
+</frameset> 
+</head> 
+
+
+</html>  
+ 
